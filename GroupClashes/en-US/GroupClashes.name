@@ -10,8 +10,3 @@ Group Clashes
 ID_GroupClashesButton.DisplayName=
 Group Clashes
 
-ID_GroupClashesButton.ToolTip=
-Groups clashes according to the items involved
-
-ID_GroupClashesButton.ExtendedToolTip=
-Select a clash test, a grouping mode and click on Group

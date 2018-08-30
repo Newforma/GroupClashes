@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 using System.Windows.Forms;
 using Autodesk.Navisworks.Api.Plugins;
 
 namespace GroupClashes
 {
-    [Plugin("GroupClashes.GroupClashesPane", "BM42",DisplayName = "Group Clashes",ToolTip = "Group clashes")]
+    [Plugin("GroupClashes.GroupClashesPane", "BIMO", DisplayName = "Group Clashes",ToolTip = "Group clashes")]
     [DockPanePlugin(300, 380)]
     class GroupClashesPane : DockPanePlugin
     {

@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AdWindows">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Navisworks Manage 2019\AdWindows.dll</HintPath>
+    </Reference>
     <Reference Include="Autodesk.Navisworks.Api, Version=13.0.1294.5, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(ProgramW6432)\Autodesk\Navisworks Manage 2019\Autodesk.Navisworks.Api.dll</HintPath>
@@ -93,12 +96,12 @@
     <Content Include="Help\Resources\original_a6f52492-7d62-4cc2-8c7b-2a37421b5f03_.png" />
     <Content Include="Help\Resources\original_e950995e-f6f0-475c-9ff8-e1a1203d9679_.png" />
     <Content Include="Help\Resources\resized_e40892e4-0990-444e-af36-1e1e2322008b_.png" />
-    <Content Include="Images\GroupClashesIcon_Large.ico">
+    <Resource Include="Images\GroupClashesIcon_Large.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\GroupClashesIcon_Small.ico">
+    </Resource>
+    <Resource Include="Images\GroupClashesIcon_Small.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </Resource>
     <Content Include="PackageContents.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -116,13 +119,10 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>IF EXIST "C:\Program Files\Autodesk\Navisworks Manage 2019\Plugins\$(TargetName)\" rmdir /S /Q "C:\Program Files\Autodesk\Navisworks Manage 2019\Plugins\$(TargetName)\"
-xcopy /Y "$(TargetPath)" "C:\Program Files\Autodesk\Navisworks Manage 2019\Plugins\$(TargetName)\"
-mkdir "C:\Program Files\Autodesk\Navisworks Manage 2019\Plugins\$(TargetName)\en-US
-copy /Y "$(ProjectDir)en-US\*.*" "C:\Program Files\Autodesk\Navisworks Manage 2019\Plugins\$(TargetName)\en-US\"
-xcopy /Y "$(ProjectDir)Images\*.*" "C:\Program Files\Autodesk\Navisworks Manage 2019\Plugins\$(TargetName)\Images\"
-xcopy /Y "$(ProjectDir)Help\*.*" "C:\Program Files\Autodesk\Navisworks Manage 2019\Plugins\$(TargetName)\Help\"
-xcopy /Y "$(ProjectDir)Help\Resources\*.*" "C:\Program Files\Autodesk\Navisworks Manage 2019\Plugins\$(TargetName)\Help\Resources\"</PostBuildEvent>
+    <PostBuildEvent>xcopy "$(TargetDir)*.*" "%25APPDATA%25\Autodesk Navisworks Manage 2019\Plugins\$(TargetName)" /Y /S /I
+xcopy "$(TargetDir)*.*" "%25APPDATA%25\Autodesk Navisworks Manage 2018\Plugins\$(TargetName)" /Y /S /I
+xcopy "$(TargetDir)*.*" "%25APPDATA%25\Autodesk Navisworks Manage 2017\Plugins\$(TargetName)" /Y /S /I
+xcopy "$(TargetDir)*.*" "%25APPDATA%25\Autodesk Navisworks Manage 2016\Plugins\$(TargetName)" /Y /S /I</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

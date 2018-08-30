@@ -118,7 +118,7 @@
             </Grid>
         </GroupBox>
         <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal" Margin="5,0,0,0">
-            <CheckBox Name="keepExistingGroupsCheckBox" IsChecked="False" VerticalAlignment="Center"/>
+            <CheckBox Name="keepExistingGroupsCheckBox" IsChecked="True" VerticalAlignment="Center"/>
             <Label Content="Keep existing groups"/>
         </StackPanel>
         <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,5,0,0">
