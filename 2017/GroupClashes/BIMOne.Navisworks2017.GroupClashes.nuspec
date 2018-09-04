@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>BIMOne.Navisworks2017.GroupClashes</id>
+    <version>1.0.0</version>
+    <title>Group Clashes</title>
+    <authors>BIM One Inc.</authors>
+    <owners>BIM One Inc.</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Clash grouper for Navisworks.</description>
+    <dependencies>
+      <dependency id="BIMOne.Autodesk.Navisworks2017.Api" version="14.0.1298.75" />
+      <dependency id="BIMOne.Autodesk.Navisworks2017.Clash" version="14.0.1298.75" />
+    </dependencies>
+  </metadata>
+</package>
