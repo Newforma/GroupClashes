@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?define NavisworksVersion = "2019" ?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Module Id="GroupClashes_MergeModuleNw2019" 
+	        Language="0" 
+	        Version="1.0.0.0">
+		<Package Id="6b5fef4d-9ed8-4964-ab68-a87e7ce5a083" 
+		         Manufacturer="BIMOne" 
+		         InstallerVersion="200" />
+
+	  <Directory Id="TARGETDIR"
+	             Name="SourceDir">
+
+	    <Directory Id="dir_Navisworks"
+	               Name="Navisworks">
+
+	      <Directory Id="dir_Navisworks_$(var.NavisworksVersion)"
+	                 Name="2019">
+
+	        <Component Id="comp_GroupClashes$(var.NavisworksVersion)"
+	                   DiskId="1"
+	                   Guid="71261CE8-C039-493E-9AEC-56B720AE2A07">
+	          <RegistryValue Root="HKCU"
+	                         Key="Software\[Manufacturer]\[Product]"
+	                         Name="[INSTALLFOLDER]"
+	                         Value="[INSTALLFOLDER]"
+	                         KeyPath="yes"
+	                         Type="string" />
+
+            <!--Todo: Generer le vrai package 1.0.0 sans le CI-xxxx sur myget-->
+	          <File Id="BIMOne.Navisworks2019.GroupClashes"
+	                Source="..\..\..\..\packages\BIMOne.Navisworks2019.GroupClashes.1.0.0-CI-20180905-151640\lib\net47\GroupClashes.BM42.dll" />
+
+	          <RemoveFolder Id="RemoveNavisworksDir$(var.NavisworksVersion)"
+	                        On="uninstall" />
+	        </Component>
+
+	      </Directory>
+
+	      <Component Guid="F0A38BB4-B6DC-4256-AD2E-9A12654FA296"
+	                 Id="comp_Navisworks"
+	                 DiskId="1">
+	        <RegistryValue Root="HKCU"
+	                       Key="Software\[Manufacturer]\[Product]"
+	                       Name="[INSTALLFOLDER]"
+	                       Value="[INSTALLFOLDER]"
+	                       KeyPath="yes"
+	                       Type="string" />
+	        <RemoveFolder Id="NavisworksDirectory"
+	                      On="uninstall" />
+	      </Component>
+	    </Directory>
+
+	  </Directory>
+	</Module>
+</Wix>

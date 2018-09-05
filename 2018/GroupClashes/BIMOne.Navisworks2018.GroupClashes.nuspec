@@ -12,5 +12,8 @@
       <dependency id="BIMOne.Autodesk.Navisworks2018.Api" version="15.0.1314.36" />
       <dependency id="BIMOne.Autodesk.Navisworks2018.Clash" version="15.0.1314.36" />
     </dependencies>
-  </metadata>
+  </metadata>  
+  <files>
+    <file src="bin\Release\*.dll" target="lib\net461" />
+  </files>
 </package>
