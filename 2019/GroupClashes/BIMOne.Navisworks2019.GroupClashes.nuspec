@@ -13,4 +13,7 @@
       <dependency id="BIMOne.Autodesk.Navisworks2019.Clash" version="16.0.1326.55" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="bin\Release\*.dll" target="lib\net47" />
+  </files>
 </package>
