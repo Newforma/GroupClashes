@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?define NavisworksVersion = "2016" ?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Module Id="GroupClashes_MergeModuleNw2018"
+          Language="0"
+          Version="1.0.0.0">
+    <Package Id="F0A127FD-B190-4D1B-8E63-9CA98DE2FE4F"
+             Manufacturer="BIMOne"
+             InstallerVersion="200" />
+
+    <Directory Id="TARGETDIR"
+               Name="SourceDir">
+
+      <Directory Id="dir_Navisworks"
+                 Name="Navisworks">
+
+        <Directory Id="dir_Navisworks_$(var.NavisworksVersion)"
+                   Name="2016">
+
+          <Component Id="comp_GroupClashes$(var.NavisworksVersion)"
+                     DiskId="1"
+                     Guid="6640C60A-E3CC-49B2-BC34-B2A9DA9FCC1E">
+            <RegistryValue Root="HKCU"
+                           Key="Software\[Manufacturer]\[Product]"
+                           Name="[INSTALLFOLDER]"
+                           Value="[INSTALLFOLDER]"
+                           KeyPath="yes"
+                           Type="string" />
+
+            <File Id="BIMOne.Navisworks2016.GroupClashes"
+                  Source="..\..\..\packages\BIMOne.Navisworks2016.GroupClashes.1.1.0\lib\net461\GroupClashes.BM42.dll" />
+
+            <RemoveFolder Id="RemoveNavisworksDir$(var.NavisworksVersion)"
+                          On="uninstall" />
+          </Component>
+
+        </Directory>
+
+        <Component Guid="BB89195B-292F-4844-9A6B-AE640211D172"
+                   Id="comp_Navisworks"
+                   DiskId="1">
+          <RegistryValue Root="HKCU"
+                         Key="Software\[Manufacturer]\[Product]"
+                         Name="[INSTALLFOLDER]"
+                         Value="[INSTALLFOLDER]"
+                         KeyPath="yes"
+                         Type="string" />
+          <RemoveFolder Id="NavisworksDirectory"
+                        On="uninstall" />
+        </Component>
+      </Directory>
+
+    </Directory>
+  </Module>
+</Wix>
