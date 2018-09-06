@@ -31,7 +31,7 @@
 
             <!--Todo: Generer le vrai package 1.0.0 sans le CI-xxxx sur myget-->
 	          <File Id="BIMOne.Navisworks2019.GroupClashes"
-	                Source="..\..\..\..\packages\BIMOne.Navisworks2019.GroupClashes.1.0.0-CI-20180905-151640\lib\net47\GroupClashes.BM42.dll" />
+	                Source="..\..\..\packages\BIMOne.Navisworks2019.GroupClashes.1.0.0-BETA\lib\net47\GroupClashes.BM42.dll" />
 
 	          <RemoveFolder Id="RemoveNavisworksDir$(var.NavisworksVersion)"
 	                        On="uninstall" />
