@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?define NavisworksVersion = "2018" ?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Module Id="GroupClashes_MergeModuleNw2018"
+	        Language="0"
+	        Version="1.0.0.0">
+    <Package Id="68D6D30B-7966-481A-B01E-45BDD7ABF240"
+		         Manufacturer="BIMOne"
+		         InstallerVersion="200" />
+
+    <Directory Id="TARGETDIR"
+	             Name="SourceDir">
+
+      <Directory Id="dir_Navisworks"
+	               Name="Navisworks">
+
+        <Directory Id="dir_Navisworks_$(var.NavisworksVersion)"
+	                 Name="2018">
+
+          <Component Id="comp_GroupClashes$(var.NavisworksVersion)"
+	                   DiskId="1"
+	                   Guid="6D7F5C1B-3AC2-4EF0-B467-9C7E13E00DB2">
+            <RegistryValue Root="HKCU"
+	                         Key="Software\[Manufacturer]\[Product]"
+	                         Name="[INSTALLFOLDER]"
+	                         Value="[INSTALLFOLDER]"
+	                         KeyPath="yes"
+	                         Type="string" />
+            
+            <File Id="BIMOne.Navisworks2018.GroupClashes"
+	                Source="..\..\..\packages\BIMOne.Navisworks2018.GroupClashes.1.1.0\lib\net461\GroupClashes.BM42.dll" />
+
+            <RemoveFolder Id="RemoveNavisworksDir$(var.NavisworksVersion)"
+	                        On="uninstall" />
+          </Component>
+
+        </Directory>
+
+        <Component Guid="84BD0D08-3097-45AC-8155-63E56C424E2A"
+	                 Id="comp_Navisworks"
+	                 DiskId="1">
+          <RegistryValue Root="HKCU"
+	                       Key="Software\[Manufacturer]\[Product]"
+	                       Name="[INSTALLFOLDER]"
+	                       Value="[INSTALLFOLDER]"
+	                       KeyPath="yes"
+	                       Type="string" />
+          <RemoveFolder Id="NavisworksDirectory"
+	                      On="uninstall" />
+        </Component>
+      </Directory>
+
+    </Directory>
+  </Module>
+</Wix>

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InstallerProject", "InstallerProject", "{289E75DC-D1AD-4706-8561-7E1D3244737D}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "GroupClashes_MergeModuleNw2018", "MergeModule-Autodesk2018\GroupClashes_MergeModuleNw2018.wixproj", "{80E7C4E1-8263-4A5F-8401-C7107F587A58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80E7C4E1-8263-4A5F-8401-C7107F587A58}.Debug|x86.ActiveCfg = Installer|x86
+		{80E7C4E1-8263-4A5F-8401-C7107F587A58}.Debug|x86.Build.0 = Installer|x86
+		{80E7C4E1-8263-4A5F-8401-C7107F587A58}.Release|x86.ActiveCfg = Installer|x86
+		{80E7C4E1-8263-4A5F-8401-C7107F587A58}.Release|x86.Build.0 = Installer|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80E7C4E1-8263-4A5F-8401-C7107F587A58} = {289E75DC-D1AD-4706-8561-7E1D3244737D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D7262C8-44F3-46D2-8400-BF1BF50C199F}
+	EndGlobalSection
+EndGlobal
