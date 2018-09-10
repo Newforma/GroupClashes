@@ -15,5 +15,7 @@
   </metadata>  
   <files>
     <file src="bin\Release\*.dll" target="lib\net461" />
+    <file src="bin\Release\Help\*.*" target="Help" />
+    <file src="bin\Release\Help\Resources\*.*" target="Help\Resources" />
   </files>
 </package>

@@ -84,13 +84,27 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Help\appicon.ico" />
-    <Content Include="Help\Help.html" />
-    <Content Include="Help\Resources\appstore-combined.min.css" />
-    <Content Include="Help\Resources\original_91ffa447-104a-44d6-97ff-ba8a2abc4394_.png" />
-    <Content Include="Help\Resources\original_a6f52492-7d62-4cc2-8c7b-2a37421b5f03_.png" />
-    <Content Include="Help\Resources\original_e950995e-f6f0-475c-9ff8-e1a1203d9679_.png" />
-    <Content Include="Help\Resources\resized_e40892e4-0990-444e-af36-1e1e2322008b_.png" />
+    <Content Include="Help\appicon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\Help.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\Resources\appstore-combined.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\Resources\original_91ffa447-104a-44d6-97ff-ba8a2abc4394_.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\Resources\original_a6f52492-7d62-4cc2-8c7b-2a37421b5f03_.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\Resources\original_e950995e-f6f0-475c-9ff8-e1a1203d9679_.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\Resources\resized_e40892e4-0990-444e-af36-1e1e2322008b_.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Resource Include="Images\GroupClashesIcon_Large.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
