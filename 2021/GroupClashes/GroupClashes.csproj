@@ -31,6 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autodesk.Navisworks.Api, Version=18.0.1347.51, Culture=neutral, PublicKeyToken=d85e58fa5af9b484">
+      <HintPath>..\packages\BIMOne.Autodesk.Navisworks2021.Api.18.0.1347.51\lib\net47\Autodesk.Navisworks.Api.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.Clash, Version=18.0.1347.51, Culture=neutral, PublicKeyToken=d85e58fa5af9b484">
+      <HintPath>..\packages\BIMOne.Autodesk.Navisworks2021.Clash.18.0.1347.51\lib\net47\Autodesk.Navisworks.Clash.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -116,11 +124,11 @@
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="BIMOne.Autodesk.Navisworks2021.Api" Version="18.0.1347.51" />
-    <PackageReference Include="BIMOne.Autodesk.Navisworks2021.Clash" Version="18.0.1347.51" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy "$(TargetDir)*.*" "%25APPDATA%25\Autodesk Navisworks Manage 2021\Plugins\$(TargetName)" /Y /S /I</PostBuildEvent>
