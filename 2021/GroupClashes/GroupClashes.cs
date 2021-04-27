@@ -6,12 +6,10 @@ using Autodesk.Navisworks.Api.Plugins;
 namespace BimOne.BimTrack.GroupClashes
 {
     [Plugin("BimOne.BimTrack.GroupClashes", "BIMO", DisplayName = "BimTrack Group Clashes")]
-    //[Strings("GroupClashes.name")]
-    //[RibbonLayout("GroupClashes.xaml")]
     [RibbonTab("ID_GroupClashesTab", DisplayName = "BimTrack Group Clashes")]
     [Command("ID_GroupClashesButton",
              Icon = "GroupClashesIcon_Small.ico", LargeIcon = "GroupClashesIcon_Large.ico",
-             DisplayName = "BimTrack Group Clashes", CanToggle = false)]
+             DisplayName = "Group Clashes", CanToggle = false)]
 
     class RibbonHandler : CommandHandlerPlugin
     {
