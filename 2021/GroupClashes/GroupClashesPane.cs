@@ -2,9 +2,9 @@
 using System.Windows.Forms;
 using Autodesk.Navisworks.Api.Plugins;
 
-namespace GroupClashes
+namespace BimOne.BimTrack.GroupClashes
 {
-    [Plugin("GroupClashes.GroupClashesPane", "BIMO", DisplayName = "Group Clashes",ToolTip = "Group clashes")]
+    [Plugin("BimOne.BimTrack.GroupClashes.GroupClashesPane", "BIMO", DisplayName = "BimTrack Group Clashes",ToolTip = "BimTrack Group clashes")]
     [DockPanePlugin(300, 380)]
     class GroupClashesPane : DockPanePlugin
     {
