@@ -1,17 +1,13 @@
 ﻿using System;
-using System.IO;
-using System.Reflection;
 using Autodesk.Navisworks.Api.Plugins;
 
-namespace GroupClashes
+namespace BimOne.BimTrack.GroupClashes
 {
-    [Plugin("GroupClashes", "BIMO", DisplayName = "Group Clashes")]
-    //[Strings("GroupClashes.name")]
-    //[RibbonLayout("GroupClashes.xaml")]
-    [RibbonTab("ID_GroupClashesTab", DisplayName = "Group Clashes")]
+    [Plugin("BimOne.BimTrack.GroupClashes", "BIMO", DisplayName = "BimTrack Group Clashes")]
+    [RibbonTab("ID_GroupClashesTab", DisplayName = "BimTrack Group Clashes")]
     [Command("ID_GroupClashesButton",
-             Icon = "GroupClashesIcon_Small.ico", LargeIcon = "GroupClashesIcon_Large.ico",
-             DisplayName = "Group Clashes", CanToggle = false)]
+        Icon = "GroupClashesIcon_Small.ico", LargeIcon = "GroupClashesIcon_Large.ico",
+        DisplayName = "Group Clashes", CanToggle = false)]
 
     class RibbonHandler : CommandHandlerPlugin
     {
@@ -23,7 +19,7 @@ namespace GroupClashes
             }
 
             //Find the plugin
-            PluginRecord pr = Autodesk.Navisworks.Api.Application.Plugins.FindPlugin("GroupClashes.GroupClashesPane.BIMO");
+            PluginRecord pr = Autodesk.Navisworks.Api.Application.Plugins.FindPlugin("BimOne.BimTrack.GroupClashes.GroupClashesPane.BIMO");
 
             if (pr != null && pr is DockPanePluginRecord && pr.IsEnabled)
             {
