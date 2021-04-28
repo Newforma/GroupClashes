@@ -1,11 +1,10 @@
-﻿
-using System.Collections.Generic;
-using System.Linq;
-using Autodesk.Navisworks.Api.Clash;
-using Autodesk.Navisworks.Api;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
+using Autodesk.Navisworks.Api;
+using Autodesk.Navisworks.Api.Clash;
 
-namespace GroupClashes
+namespace BimOne.BimTrack.GroupClashes
 {
     class GroupingFunctions
     {

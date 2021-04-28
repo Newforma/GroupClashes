@@ -7,8 +7,8 @@
     <ProjectGuid>{3876FA5D-2B66-4859-A4CD-12F9020B4C29}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GroupClashes</RootNamespace>
-    <AssemblyName>GroupClashes.BM42</AssemblyName>
+    <RootNamespace>BimOne.BimTrack.GroupClashes</RootNamespace>
+    <AssemblyName>BimOne.BimTrack.GroupClashes</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
