@@ -1,4 +1,4 @@
-﻿namespace GroupClashes
+﻿namespace BimOne.BimTrack.GroupClashes
 {
     partial class GroupClashesHostingControl
     {
