@@ -10,13 +10,13 @@
 
     <RibbonTab Id="ID_GroupClashesTab">
         <RibbonPanel x:Uid="RibbonPane1_1">
-            <RibbonPanelSource x:Uid="RibbonPanelSource_RibbonPanel_1" Title="Group Clashes">
+            <RibbonPanelSource x:Uid="RibbonPanelSource_RibbonPanel_1" Title="BimTrack Group Clashes">
 
                 <local:NWRibbonButton x:Uid="Button_1" Id="ID_GroupClashesButton"
-                                    Size="Large"
-                                    ShowText="True"   
-                                    Text="Group Clashes"
-                                    Orientation="Vertical"/>
+                                      Size="Large"
+                                      ShowText="True"   
+                                      Text="BimTrack Group Clashes"
+                                      Orientation="Vertical"/>
 
             </RibbonPanelSource>
         </RibbonPanel>
