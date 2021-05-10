@@ -12,7 +12,7 @@ using System.Windows.Forms.Integration;
 using System.Windows.Media;
 using System.Windows.Interop;
 
-namespace GroupClashes
+namespace BimOne.BimTrack.GroupClashes
 {
 
 

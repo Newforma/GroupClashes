@@ -20,7 +20,7 @@ using System.Windows.Shapes;
 using Autodesk.Navisworks.Api.Clash;
 using Autodesk.Navisworks.Api;
 
-namespace GroupClashes
+namespace BimOne.BimTrack.GroupClashes
 {
     /// <summary>
     /// Interaction logic for GroupClashesInterface.xaml

@@ -5,7 +5,7 @@ using Autodesk.Navisworks.Api.Clash;
 using Autodesk.Navisworks.Api;
 using System.ComponentModel;
 
-namespace GroupClashes
+namespace BimOne.BimTrack.GroupClashes
 {
     class GroupingFunctions
     {
