@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>BIMOne.Navisworks2024.GroupClashes</id>
-    <version>1.1.9</version>
+    <version>1.1.10</version>
     <title>Group Clashes</title>
     <authors>BIM One Inc.</authors>
     <owners>BIM One Inc.</owners>

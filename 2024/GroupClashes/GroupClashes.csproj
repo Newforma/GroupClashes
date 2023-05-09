@@ -117,9 +117,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ReferencePathWithRefAssemblies Update="C:\Users\DavidCarrier\.nuget\packages\bimone.autodesk.navisworks2024.clash\21.0.1397.16\lib\net47\Autodesk.Navisworks.Clash.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="BIMOne.Autodesk.Navisworks2024.Api" Version="21.0.1397.17" />
     <PackageReference Include="BIMOne.Autodesk.Navisworks2024.Clash" Version="21.0.1397.17" />
   </ItemGroup>
