@@ -31,6 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autodesk.Navisworks.Api">
+      <HintPath>..\packages\BIMOne.Autodesk.Navisworks2024.Api.21.0.1397.17\lib\net48\Autodesk.Navisworks.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.Clash">
+      <HintPath>..\packages\BIMOne.Autodesk.Navisworks2024.Clash.21.0.1397.17\lib\net48\Autodesk.Navisworks.Clash.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -48,8 +54,6 @@
     <Reference Include="UIAutomationProvider" />
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
-    <Reference Include="Autodesk.Navisworks.Api" />
-    <Reference Include="Autodesk.Navisworks.Clash" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GroupClashes.cs" />
@@ -116,13 +120,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="BIMOne.Autodesk.Navisworks2024.Api" Version="21.0.1397.17" />
-    <PackageReference Include="BIMOne.Autodesk.Navisworks2024.Clash" Version="21.0.1397.17" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(TargetDir)*.*" "%25APPDATA%25\Autodesk Navisworks Manage 2021\Plugins\$(TargetName)" /Y /S /I</PostBuildEvent>
+    <PostBuildEvent>xcopy "$(TargetDir)*.*" "%25APPDATA%25\Autodesk Navisworks Manage 2024\Plugins\$(TargetName)" /Y /S /I</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
