@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BimOne.BimTrack.GroupClashes</RootNamespace>
     <AssemblyName>BimOne.BimTrack.GroupClashes</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -31,13 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autodesk.Navisworks.Api, Version=14.0.1298.75, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
-      <HintPath>..\packages\BIMOne.Autodesk.Navisworks2017.Api.14.0.1298.75\lib\net452\Autodesk.Navisworks.Api.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Autodesk.Navisworks.Api">
+      <HintPath>..\packages\BIMOne.Autodesk.Navisworks2024.Api.21.0.1397.17\lib\net48\Autodesk.Navisworks.Api.dll</HintPath>
     </Reference>
-    <Reference Include="Autodesk.Navisworks.Clash, Version=14.0.1298.75, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
-      <HintPath>..\packages\BIMOne.Autodesk.Navisworks2017.Clash.14.0.1298.75\lib\net452\Autodesk.Navisworks.Clash.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Autodesk.Navisworks.Clash">
+      <HintPath>..\packages\BIMOne.Autodesk.Navisworks2024.Clash.21.0.1397.17\lib\net48\Autodesk.Navisworks.Clash.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -111,9 +109,6 @@
     <Resource Include="Images\GroupClashesIcon_Small.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Content Include="PackageContents.xml">
-      <SubType>Designer</SubType>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="en-US\GroupClashes.name">
@@ -124,12 +119,10 @@
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(TargetDir)*.*" "%25APPDATA%25\Autodesk Navisworks Manage 2017\Plugins\$(TargetName)" /Y /S /I</PostBuildEvent>
+    <PostBuildEvent>xcopy "$(TargetDir)*.*" "%25APPDATA%25\Autodesk Navisworks Manage 2024\Plugins\$(TargetName)" /Y /S /I</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
