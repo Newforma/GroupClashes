@@ -5,8 +5,8 @@ using Autodesk.Navisworks.Api.Plugins;
 
 namespace BimOne.BimTrack.GroupClashes
 {
-    [Plugin("BimOne.BimTrack.GroupClashes", "BIMO", DisplayName = "BimTrack Group Clashes")]
-    [RibbonTab("ID_GroupClashesTab", DisplayName = "BimTrack Group Clashes")]
+    [Plugin("BimOne.BimTrack.GroupClashes", "BIMO", DisplayName = "Newforma KONEKT Group Clashes")]
+    [RibbonTab("ID_GroupClashesTab", DisplayName = "Newforma KONEKT Group Clashes")]
     [Command("ID_GroupClashesButton",
              Icon = "GroupClashesIcon_Small.ico", LargeIcon = "GroupClashesIcon_Large.ico",
              DisplayName = "Group Clashes", CanToggle = false)]
