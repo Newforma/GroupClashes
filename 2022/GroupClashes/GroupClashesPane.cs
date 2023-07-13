@@ -3,7 +3,7 @@ using Autodesk.Navisworks.Api.Plugins;
 
 namespace BimOne.BimTrack.GroupClashes
 {
-    [Plugin("BimOne.BimTrack.GroupClashes.GroupClashesPane", "BIMO", DisplayName = "Newforma KONEKT Group Clashes",ToolTip = "Newforma KONEKT Group clashes")]
+    [Plugin("BimOne.BimTrack.GroupClashes.GroupClashesPane", "BIMO", DisplayName = "Newforma Konekt Group Clashes",ToolTip = "Newforma Konekt Group clashes")]
     [DockPanePlugin(300, 380)]
     class GroupClashesPane : DockPanePlugin
     {
