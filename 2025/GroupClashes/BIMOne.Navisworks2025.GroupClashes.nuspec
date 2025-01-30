@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>BIMOne.Navisworks2025.GroupClashes</id>
+    <version>1.1.16</version>
+    <title>Group Clashes</title>
+    <authors>Newforma</authors>
+    <owners>Newforma</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Clash grouper for Navisworks.</description>
+    <dependencies>
+      <dependency id="BIMOne.Autodesk.Navisworks2025.Api" version="22.3.1420.80" />
+      <dependency id="BIMOne.Autodesk.Navisworks2025.Clash" version="22.3.1420.80" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\*.dll" target="lib\net48" />
+    <file src="bin\Release\Help\*.*" target="Help" />
+    <file src="bin\Release\Help\Resources\*.*" target="Help\Resources" />
+  </files>
+</package>
