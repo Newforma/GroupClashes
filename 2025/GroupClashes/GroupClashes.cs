@@ -57,10 +57,6 @@ namespace BimOne.BimTrack.GroupClashes
 
         public override bool TryShowCommandHelp(string name)
         {
-            //FileInfo dllFileInfo = new FileInfo(Assembly.GetExecutingAssembly().Location);
-            //string pathToHtmlFile = Path.Combine(dllFileInfo.Directory.FullName, @"Help\Help.html");
-            //System.Diagnostics.Process.Start(pathToHtmlFile);
-            //return true;
             return false;
         }
     }
