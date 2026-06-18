@@ -10,12 +10,12 @@
 
     <RibbonTab Id="ID_GroupClashesTab">
         <RibbonPanel x:Uid="RibbonPane1_1">
-            <RibbonPanelSource x:Uid="RibbonPanelSource_RibbonPanel_1" Title="Newforma KONEKT Group Clashes">
+            <RibbonPanelSource x:Uid="RibbonPanelSource_RibbonPanel_1" Title="Newforma Konekt Group Clashes">
 
                 <local:NWRibbonButton x:Uid="Button_1" Id="ID_GroupClashesButton"
                                     Size="Large"
                                     ShowText="True"   
-                                    Text="Newforma KONEKT Group Clashes"
+                                    Text="Newforma Konekt Group Clashes"
                                     Orientation="Vertical"/>
 
             </RibbonPanelSource>
